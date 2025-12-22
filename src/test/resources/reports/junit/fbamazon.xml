@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="64.849585">
+    <testcase classname="To user  verify search box" name="To user enter valid product" time="18.86598">
+        <system-out><![CDATA[Given To user launch edge browser and pass amazon url.......................passed
+When To user enter product in search box....................................passed
+Then To user click search box button........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To user verify the login function" name="To user verify login function with valid user and valid password" time="21.844621">
+        <failure message="java.lang.AssertionError: To false&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.def.Defi.toUserEnterValidUsernameAndValidPassword(Defi.java:36)&#13;&#10;&#9;at ✽.To user enter valid username and valid password(file:src/test/resources/featurefiles/loginpage.feature:7)&#13;&#10;"><![CDATA[Given To user launch edge browser and pass valid url........................passed
+When To user enter valid username and valid password........................failed
+Then To user click login button.............................................skipped
+
+StackTrace:
+java.lang.AssertionError: To false
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.def.Defi.toUserEnterValidUsernameAndValidPassword(Defi.java:36)
+	at ✽.To user enter valid username and valid password(file:src/test/resources/featurefiles/loginpage.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="To user verify the login function" name="To user verify login function with valid user and valid password 2" time="24.138984">
+        <system-out><![CDATA[Given To user launch edge browser and enter  url............................passed
+When To user enter valid username and password..............................passed
+Then To user click login button.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
